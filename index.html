@@ -19,39 +19,53 @@
   </head>
   <body class="bg-[#1B1F22] text-white font-['Montserrat']">
     <div class="block1 bg-[#222629]">
-      <div class="container mx-auto">
-        <div class="w-full flex items-center justify-between py-4">
+      <div
+        class="container mx-auto px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full">
+        <div class="w-full flex items-center justify-between py-4 relative">
           <a href="" class="logo">
             <img class="w-32" src="images/logo_qaf.png" alt="" />
           </a>
 
           <nav class="w-1/2">
             <ul
-              class="flex items-center justify-between w-full uppercase font-normal">
-              <li><a href="#home" class="active font-bold">Главная</a></li>
+              class="hidden xl:flex flex items-center justify-between w-full uppercase font-normal">
+              <li><a href="#home">Главная</a></li>
               <li><a href="#mission">МИССИЯ И ЦЕЛИ</a></li>
               <li><a href="#news">Новости</a></li>
               <li><a href="#registration">Регистрация</a></li>
               <li><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
+
+          <i
+            class="mobile-menu-btn fa-solid fa-bars text-white text-3xl cursor-pointer xl:hidden"></i>
+          <ul
+            class="mobileMenu absolute top-24 right-0 hidden flex-col xl:flex-row flex items-center z-50 bg-[rgba(124,124,124,0.8)] justify-between w-auto p-3 rounded-lg uppercase font-normal">
+            <li class="mt-1"><a href="#home">Главная</a></li>
+            <li class="mt-1"><a href="#mission">МИССИЯ И ЦЕЛИ</a></li>
+            <li class="mt-1"><a href="#news">Новости</a></li>
+            <li class="mt-1"><a href="#registration">Регистрация</a></li>
+            <li class="mt-1"><a href="#contacts">Контакты</a></li>
+          </ul>
         </div>
       </div>
     </div>
 
     <div class="block2 mt-16" id="home">
-      <div class="container mx-auto">
+      <div
+        class="container mx-auto px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full">
         <div class="relative flex flex-wrap justify-between">
-          <div class="w-1/2 relative overflow-hidden">
+          <div class="hidden xl:block w-1/2 relative overflow-hidden">
             <img
               src="images/boxer.png"
               class="w-full absolute -top-5 h-[900px] object-cover"
               alt="" />
           </div>
 
-          <div class="w-1/2 flex flex-col items-start">
+          <div class="w-full xl:w-1/2 flex flex-col items-start">
             <div class="flex w-full">
               <svg
+                class="hidden xl:block"
                 width="200"
                 height="
                 275"
@@ -72,18 +86,18 @@
                   </linearGradient>
                 </defs>
               </svg>
-              <h1 class="uppercase text-7xl font-bold">
+              <h1 class="text-3xl uppercase xl:text-7xl font-bold">
                 QAF- Федерация страйкбола г. Астана
               </h1>
             </div>
-            <p class="text-lg ml-9 mt-10">
+            <p class="text-base xl:text-lg ml-0 xl:ml-9 mt-10">
               Страйкбол— командная военно-тактическая игра на честность с
               применением специально разработанной мягкой пневматики.
             </p>
 
             <a
               href=""
-              class="group hover:bg-white transition-all duration-150 border border-[#86C232] ml-9 mt-10 bg-[#86C232] flex items-center px-10 py-3">
+              class="group hover:bg-white transition-all duration-150 border border-[#86C232] ml-0 xl:ml-9 mt-10 bg-[#86C232] flex items-center px-10 py-3">
               <p class="uppercase font-bold group-hover:text-[#86C232]">
                 Подробнее
               </p>
@@ -106,10 +120,12 @@
     </div>
 
     <div class="block3 bg-[#222629BD] mt-3" id="mission">
-      <div class="container mx-auto">
+      <div
+        class="container mx-auto px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full">
         <div class="w-full flex items-center py-10 justify-between">
-          <div class="title flex items-start w-1/2">
+          <div class="title flex items-start w-full xl:w-1/2">
             <svg
+              class="hidden xl:block"
               width="17"
               height="115"
               viewBox="0 0 17 132"
@@ -133,7 +149,8 @@
                 </linearGradient>
               </defs>
             </svg>
-            <p class="text-6xl font-bold w-full ml-3 uppercase">
+            <p
+              class="text-3xl xl:text-6xl font-bold w-full ml-0 xl:ml-3 uppercase">
               Миссия и цели федерации
             </p>
           </div>
@@ -148,9 +165,10 @@
           </a> -->
         </div>
 
-        <div class="w-full flex flex-wrap justify-between items-start mt-10">
+        <div
+          class="w-full flex flex-col flex-wrap xl:flex-row justify-between items-start mt-10">
           <div
-            class="relative flex flex-col w-[23%] px-11 py-10 h-[450px] border border-[#ccc]">
+            class="relative flex flex-col w-full xl:w-[23%] px-11 py-10 h-[600px] border border-[#ccc]">
             <svg
               width="60"
               height="60"
@@ -170,7 +188,7 @@
           </div>
 
           <div
-            class="relative flex flex-col border border-[#ccc] w-[23%] px-11 py-10 h-[450px]">
+            class="relative flex flex-col border border-[#ccc] w-full xl:w-[23%] px-11 py-10 h-[600px]">
             <svg
               width="60"
               height="60"
@@ -195,7 +213,7 @@
           </div>
 
           <div
-            class="relative flex flex-col border border-[#ccc] w-[23%] px-11 py-10 h-[450px]">
+            class="relative flex flex-col border border-[#ccc] w-full xl:w-[23%] px-11 py-10 h-[600px]">
             <svg
               width="60"
               height="60"
@@ -217,7 +235,7 @@
           </div>
 
           <div
-            class="relative flex flex-col border border-[#ccc] w-[23%] px-11 py-10 h-[450px]">
+            class="relative flex flex-col border border-[#ccc] w-full xl:w-[23%] px-11 py-10 h-[600px]">
             <svg
               width="60"
               height="60"
@@ -241,10 +259,12 @@
     </div>
 
     <div class="block4 bg-[#222629BD] pt-10 pb-10" id="news">
-      <div class="container mx-auto">
+      <div
+        class="container mx-auto px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full">
         <div class="w-full flex items-center py-10 justify-between">
           <div class="title flex items-start w-full">
             <svg
+              class="hidden xl:block"
               width="17"
               height="115"
               viewBox="0 0 17 132"
@@ -268,7 +288,8 @@
                 </linearGradient>
               </defs>
             </svg>
-            <p class="text-6xl font-bold w-full ml-3 uppercase">
+            <p
+              class="text-3xl xl:text-6xl font-bold w-full ml-0 xl:ml-3 uppercase">
               Новости предстоящих <br />
               событий
             </p>
@@ -285,7 +306,7 @@
         </div>
 
         <div
-          class="mb-4 px-10 py-4 w-full border border-3-[#86C232] flex items-center justify-between">
+          class="mb-4 px-10 py-4 w-full border border-3-[#86C232] flex flex-col xl:flex-row items-center justify-between">
           <div class="flex flex-col">
             <p class="text-3xl text-[#86C232] uppercase font-bold">
               название мероприятий
@@ -293,7 +314,7 @@
             <p class="text-[#767A7C] font-bold text-xl">Описание мероприятий</p>
           </div>
 
-          <div class="flex flex-col">
+          <div class="flex flex-col mt-8 xl:mt-0">
             <p class="text-3xl text-[#86C232] uppercase font-bold">
               Дата мероприятий
             </p>
@@ -302,7 +323,7 @@
 
           <a
             href=""
-            class="group hover:bg-white transition-all duration-150 border border-[#86C232] bg-[#86C232] flex items-center px-10 py-3">
+            class="mt-8 xl:mt-0 group hover:bg-white transition-all duration-150 border border-[#86C232] bg-[#86C232] flex items-center px-10 py-3">
             <p class="uppercase font-bold group-hover:text-[#86C232]">
               Регистрация
             </p>
@@ -322,7 +343,7 @@
         </div>
 
         <div
-          class="mb-4 px-10 py-4 w-full border border-3-[#86C232] flex items-center justify-between">
+          class="mb-4 px-10 py-4 w-full border border-3-[#86C232] flex flex-col xl:flex-row items-center justify-between">
           <div class="flex flex-col">
             <p class="text-3xl text-[#86C232] uppercase font-bold">
               название мероприятий
@@ -330,7 +351,7 @@
             <p class="text-[#767A7C] font-bold text-xl">Описание мероприятий</p>
           </div>
 
-          <div class="flex flex-col">
+          <div class="flex flex-col mt-8 xl:mt-0">
             <p class="text-3xl text-[#86C232] uppercase font-bold">
               Дата мероприятий
             </p>
@@ -339,7 +360,7 @@
 
           <a
             href=""
-            class="group hover:bg-white transition-all duration-150 border border-[#86C232] bg-[#86C232] flex items-center px-10 py-3">
+            class="mt-8 xl:mt-0 group hover:bg-white transition-all duration-150 border border-[#86C232] bg-[#86C232] flex items-center px-10 py-3">
             <p class="uppercase font-bold group-hover:text-[#86C232]">
               Регистрация
             </p>
@@ -361,18 +382,21 @@
     </div>
 
     <div class="block5 bg-[#222629BD] pt-10">
-      <div class="container mx-auto">
-        <div class="relative flex flex-wrap justify-between h-[800px]">
-          <div class="w-1/2 relative overflow-hidden">
+      <div
+        class="container mx-auto px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full">
+        <div
+          class="relative flex flex-wrap justify-between h-auto xl:h-[800px]">
+          <div class="hidden xl:block xl:w-1/2 relative overflow-hidden">
             <img
               src="images/motivation-aido.png"
               class="w-full absolute -top-5 h-[900px] object-cover"
               alt="" />
           </div>
 
-          <div class="w-1/2 flex flex-col items-start">
+          <div class="w-full xl:w-1/2 flex flex-col items-start">
             <div class="flex w-full">
               <svg
+                class="hidden xl:block"
                 width="200"
                 height="
                 235"
@@ -393,11 +417,11 @@
                   </linearGradient>
                 </defs>
               </svg>
-              <h1 class="uppercase text-6xl font-bold">
+              <h1 class="text-3xl uppercase xl:text-6xl font-bold">
                 Собери команду, возьми цель, побеждай вместе!
               </h1>
             </div>
-            <p class="text-lg ml-9 mt-10">
+            <p class="text-lg ml-0 xl:ml-9 mt-10">
               Захватывающий мир страйкбола ждёт тебя!
             </p>
           </div>
@@ -406,10 +430,12 @@
     </div>
 
     <div class="block6 bg-[#222629BD] py-10" id="registration">
-      <div class="container mx-auto">
+      <div
+        class="container mx-auto px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full">
         <div class="w-full flex items-center py-10 justify-between">
           <div class="title flex items-start w-full">
             <svg
+              class="hidden xl:block"
               width="17"
               height="115"
               viewBox="0 0 17 132"
@@ -433,7 +459,8 @@
                 </linearGradient>
               </defs>
             </svg>
-            <p class="text-6xl font-bold w-full ml-3 uppercase">
+            <p
+              class="text-3xl xl:text-6xl font-bold w-full ml-0 xl:ml-3 uppercase">
               Форма <br />
               регистрации
             </p>
@@ -449,55 +476,58 @@
           </a> -->
         </div>
 
-        <div class="w-full flex flex-wrap">
+        <div class="w-full flex flex-wrap flex-col xl:flex-row">
           <iframe
+            class="w-full xl:w-1/2"
             id="map_69979220"
             frameborder="0"
             width="50%"
             height="600px"
             sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
 
-          <div class="ml-4 w-[45%] flex items-start flex-wrap justify-between">
-            <p class="text-xl font-bold w-full ml-3 uppercase">
+          <div
+            class="ml-0 xl:ml-4 w-full xl:w-[45%] flex flex-col xl:flex-row items-start flex-wrap justify-between">
+            <p
+              class="text-xl font-bold w-full ml-0 xl:ml-3 mt-5 xl:mt-0 uppercase">
               Заполните данные
             </p>
             <input
-              class="py-2 px-4 w-[45%] border border-[#767A7C] bg-transparent outline-none rounded"
+              class="mt-3 xl:mt-0 py-2 px-4 w-full xl:w-[45%] border border-[#767A7C] bg-transparent outline-none rounded"
               type="text"
               placeholder="Ваше имя"
               required />
             <input
-              class="py-2 px-4 w-[45%] border border-[#767A7C] bg-transparent outline-none rounded"
+              class="mt-3 xl:mt-0 py-2 px-4 w-full xl:w-[45%] border border-[#767A7C] bg-transparent outline-none rounded"
               type="text"
               placeholder="Телефон" />
             <input
-              class="py-2 px-4 w-[45%] border border-[#767A7C] bg-transparent outline-none rounded"
+              class="mt-3 xl:mt-0 py-2 px-4 w-full xl:w-[45%] border border-[#767A7C] bg-transparent outline-none rounded"
               type="email"
               placeholder="Эл.почта" />
             <input
-              class="py-2 px-4 w-[45%] border border-[#767A7C] bg-transparent outline-none rounded"
+              class="mt-3 xl:mt-0 py-2 px-4 w-full xl:w-[45%] border border-[#767A7C] bg-transparent outline-none rounded"
               type="text"
               placeholder="Апартаменты" />
-            <div class="flex flex-col w-[45%]">
+            <div class="mt-3 xl:mt-0 flex flex-col w-full xl:w-[45%]">
               <p>Дата входа</p>
               <input
                 class="py-2 px-4 w-full border border-[#767A7C] bg-transparent outline-none rounded"
                 type="date" />
             </div>
-            <div class="flex flex-col w-[45%]">
+            <div class="mt-3 xl:mt-0 flex flex-col w-full xl:w-[45%]">
               <p>Дата выезда</p>
               <input
                 class="py-2 px-4 w-full border border-[#767A7C] bg-transparent outline-none rounded"
                 type="date" />
             </div>
-            <div class="flex flex-col w-[45%]">
+            <div class="mt-3 xl:mt-0 flex flex-col w-full xl:w-[45%]">
               <p>Сообщения</p>
               <textarea
                 class="py-2 px-4 w-full border border-[#767A7C] bg-transparent outline-none rounded"
                 placeholder="Сообщения">
               </textarea>
             </div>
-            <div class="flex flex-col w-[45%]">
+            <div class="mt-3 xl:mt-0 flex flex-col w-full xl:w-[45%]">
               <p>Выбрать пакет</p>
               <div>
                 <input
@@ -530,14 +560,14 @@
               </div>
             </div>
 
-            <div class="flex flex-col w-[45%]">
+            <div class="mt-3 xl:mt-0 flex flex-col w-full xl:w-[45%]">
               <p>Подарочная карта</p>
               <input
                 class="py-2 px-4 w-full border border-[#767A7C] bg-transparent outline-none rounded"
                 type="file" />
             </div>
 
-            <div class="flex flex-col w-full">
+            <div class="mt-3 xl:mt-0 flex flex-col w-full">
               <input
                 class="bg-white text-black cursor-pointer uppercase py-2 px-4 w-full border border-[#767A7C] bg-transparent outline-none rounded"
                 type="submit"
@@ -549,13 +579,14 @@
     </div>
 
     <footer class="bg-[#1B1F22]" id="contacts">
-      <div class="container mx-auto">
+      <div
+        class="container mx-auto px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full">
         <div class="flex flex-wrap justify-between pt-10 py-5">
           <a href="" class="logo">
             <img class="w-32" src="images/logo_qaf.png" alt="" />
           </a>
 
-          <div class="flex flex-col">
+          <div class="flex flex-col mt-5 xl:mt-0">
             <p class="uppercase text-3xl font-bold">Контакты</p>
             <p class="text-[#767A7C] text-base mb-3">
               Адрес: Хусейн бен Талал 21/1
@@ -565,7 +596,7 @@
             >
           </div>
 
-          <div class="flex flex-col">
+          <div class="flex flex-col mt-5 xl:mt-0">
             <p class="uppercase text-3xl font-bold">Меню</p>
             <ul
               class="flex text-[#767A7C] flex-col items-start justify-between w-full uppercase font-normal">
@@ -577,7 +608,7 @@
             </ul>
           </div>
 
-          <div class="flex flex-col">
+          <div class="flex flex-col mt-5 xl:mt-0">
             <p class="uppercase text-2xl font-bold">Социальные сети</p>
             <div class="flex items-center flex-wrap justify-between">
               <a href="https://wa.me/87777777777"
@@ -601,6 +632,7 @@
       </div>
     </footer>
 
+    <script src="script.js"></script>
     <script type="text/javascript">
       (function (e, t) {
         var r = document.getElementById(e);
